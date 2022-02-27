@@ -1,0 +1,15 @@
+esphome:
+  name: $device_name
+  platform: ESP8266
+  board: $board_model
+  # esp8266_restore_from_flash: yes
+  build_path: build/$device_name
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: True
+
+logger:
+  # hardware_uart: UART0
+  level: DEBUG
